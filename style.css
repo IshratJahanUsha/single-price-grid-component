@@ -1,0 +1,136 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap'); */
+
+
+:root {
+    --clr-Cyan: hsl(179, 62%, 43%);
+    --clr-light-Cyan: hsl(179, 57%, 55%);
+    --clr-Bright-Yellow: hsl(71, 73%, 54%);
+    --clr-Light-Gray: hsl(204, 43%, 93%);
+    --clr-Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+
+/* css reset code */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--clr-Light-Gray);
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
+/* my project css */
+
+main {
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    background: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.home{
+    padding: 2rem;
+}
+ 
+.home .title{
+    color: var(--clr-Cyan);
+}
+
+.discount{
+    color: var(--clr-Bright-Yellow);
+}
+
+.home p{
+    color: var(--clr-Grayish-Blue);
+}
+
+.grid-sec{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+.sub-card{
+    color: white;
+    background-color: var(--clr-Cyan);
+    padding: 2rem;
+    line-height: .2rem;
+}
+
+.sub-card h5{
+    font-size: 1.5rem;
+}
+
+.sub-card span{
+    font-size: .8rem;
+    margin-left: .2rem;
+    
+    color: var(--clr-Light-Gray); 
+}
+
+.sub-card button{
+    height: 3rem;
+    width: 100%;
+    margin-top: 2rem;
+    color: white;
+    background-color: var(--clr-Bright-Yellow);
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+
+}
+
+.footer{
+    padding: 2rem; 
+    color: white;
+    background-color: var(--clr-light-Cyan);
+
+}
+
+.footer h4{
+    font-weight: bold;
+}
+
+.footer li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+@media (min-width:1000px) {
+    .grid-sec{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
